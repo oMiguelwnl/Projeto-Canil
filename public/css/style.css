@@ -107,7 +107,7 @@ h2 {
 }
 .item--type,
 .item--color,
-.item--genre {
+.item--genre .item--age {
   font-size: 13px;
   color: var(--lighter);
   margin-bottom: 3px;

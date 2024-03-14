@@ -148,16 +148,16 @@ const data: Pet[] = [
   },
 ];
 
-export const Pet = () => {
+export const Pet = {
   getAll: (): Pet[] => {
     return data;
-  };
+  },
   getFromType: (type: PetType): Pet[] => {
     return data.filter((pet) => pet.type === type);
-  };
+  },
   getFromName: (name: string): Pet[] => {
     return data.filter(
       (pet) => pet.name.toLowerCase().indexOf(name.toLowerCase()) > -1
     );
-  };
+  },
 };
